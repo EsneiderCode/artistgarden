@@ -258,6 +258,10 @@ header{
     text-align: left;
 }
 
+.comments-container__comment--left .comment-description{
+    margin-bottom:200px;
+}
+
 .person-about__img{
     width:329px;
     height:441px;

@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/quicksand" rel="stylesheet">
-    <script src="index.js"></script>
     <title>Artist Garden</title>
 </head>
 <body>
@@ -25,61 +25,88 @@
             <img class="header__search-container-img" src="./images/searchicon.png" alt="searchicon">
         </div>
     </header>
+
+    <div class="mobile-header container">
+		<button id="burger" class="open-main-nav">
+			<span class="burger"></span>
+			<span class="burger-text">Menu</span>
+		</button>
+		<nav class="main-nav" id="main-nav">
+			<ul>
+				<li class="li-menu">
+					<a href="#home">Главная</a>
+				</li>
+				<li class="li-menu">
+					<a href="#services">Услуги</a>
+				</li>
+				<li class="li-menu">
+					<a href="#about">О компании</a>
+				</li>
+				<li class="li-menu">
+					<a href="#contact">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		
+	</div>
+
     <section class="section-home" id="home">
         <h1 class="section-home__header-h1">Artist Garden</h1>
         <p class="section-home__description">Проектирование, реализация и обслуживание ландшафтной архитектуры, надзор за исполнительными работами и удалённое проектирование. Нашей целью является выполнение уникальных и престижных проектов, отвечающих ожиданиям даже самых требовательных клиентов.</p>
-        <button class="section-home__orderbutton">Заказать</button>
+        <a href="#contact" class="section-home__orderbutton">Заказать</a>
     </section>
     <section class="section-services" id="services">
-        <h2 class="section-services__header-h2">УСЛУГИ</h2>
-        <h3 class="section-services__subheader">Ландшафтный дизайн участка</h3>
-        <p class="section-services__description">Сад — это место, где можно расслабиться после тяжёлого рабочего дня, насладиться прекрасной погодой и отдыхом. Однако, прежде чем сад начнёт выполнять функцию личного оазиса, за ним нужно правильно ухаживать. Грамотный дизайн сада – дело непростое, поэтому стоит воспользоваться услугами профессионала. Создание целостной композиции в соответствии с видением инвесторов и осуществление всех их мечтаний требует большого опыта. Специально для вас я создам индивидуальный проект, чтобы ваш сад был не только декоративным, но и функциональным. Решения, представленные в проекте, и подбор всех растений будут адаптированы таким образом, чтобы вы могли сами ухаживать за ними. Реализация Ваших желаний является самым важным для меня!</p>
-        <div class="section-services__gallery">
-            <div class="service">
-                <img src="./images/service-1.jpg" alt="service-1" class="service__image">
-                <p class="service__description">Проекты репрезентативного озеленения вокруг дома</p>
+            <h2 class="section-services__header-h2">УСЛУГИ</h2>
+            <h3 class="section-services__subheader">Ландшафтный дизайн участка</h3>
+            <p class="section-services__description">Сад — это место, где можно расслабиться после тяжёлого рабочего дня, насладиться прекрасной погодой и отдыхом. Однако, прежде чем сад начнёт выполнять функцию личного оазиса, за ним нужно правильно ухаживать. Грамотный дизайн сада – дело непростое, поэтому стоит воспользоваться услугами профессионала. Создание целостной композиции в соответствии с видением инвесторов и осуществление всех их мечтаний требует большого опыта. Специально для вас я создам индивидуальный проект, чтобы ваш сад был не только декоративным, но и функциональным. Решения, представленные в проекте, и подбор всех растений будут адаптированы таким образом, чтобы вы могли сами ухаживать за ними. Реализация Ваших желаний является самым важным для меня!</p>
+        <div class="section__services__global-container">
+            <div class="section-services__gallery">
+                <div class="service">
+                    <img src="./images/service-1.jpg" alt="service-1" class="service__image">
+                    <p class="service__description">Проекты репрезентативного озеленения вокруг дома</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-2.webp" alt="service-2" class="service__image">
+                    <p class="service__description">Дизайны летних садов</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-3.png" alt="service-3" class="service__image">
+                    <p class="service__description">Проекты зон отдыха и досуга</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-4.png" alt="service-4" class="service__image">
+                    <p class="service__description">Дизайн зеленых стен и вертикальных садов</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-5.png" alt="service-5" class="service__image">
+                    <p class="service__description">Проекты зеленых зон, парков и других форм озеленения</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-6.webp" alt="service-6" class="service__image">
+                    <p class="service__description">Проекты ревалоризации исторических садово-парковых комплексов</p>
+                </div>
             </div>
-            <div class="service">
-                <img src="./images/service-2.webp" alt="service-2" class="service__image">
-                <p class="service__description">Дизайны летних садов</p>
-            </div>
-            <div class="service">
-                <img src="./images/service-3.png" alt="service-3" class="service__image">
-                <p class="service__description">Проекты зон отдыха и досуга</p>
-            </div>
-            <div class="service">
-                <img src="./images/service-4.png" alt="service-4" class="service__image">
-                <p class="service__description">Дизайн зеленых стен и вертикальных садов</p>
-            </div>
-            <div class="service">
-                <img src="./images/service-5.png" alt="service-5" class="service__image">
-                <p class="service__description">Проекты зеленых зон, парков и других форм озеленения</p>
-            </div>
-            <div class="service">
-                <img src="./images/service-6.webp" alt="service-6" class="service__image">
-                <p class="service__description">Проекты ревалоризации исторических садово-парковых комплексов</p>
-            </div>
-        </div>
-        <div class="section-services__gallery--second">
-            <div class="service">
-                <img src="./images/service-7.png" alt="service-7" class="service__image">
-                <p class="service__description"> Дендрологическая инвентаризация, определение видов кустарников и деревьев</p>
-            </div>
-            <div class="service">
-                <img src="./images/service-8.webp" alt="service-8" class="service__image">
-                <p class="service__description">  Проекты образовательных садов для школ</p>
-            </div>
-            <div class="service">
-                <img src="./images/service-9.png" alt="service-9" class="service__image">
-                <p class="service__description"> Проекты сенсорных садов для инвалидов</p>
-            </div>
-            <div class="service">
-                <img src="./images/service-10.png" alt="service-10" class="service__image">
-                <p class="service__description">Репрезентативные проекты озеленения вокруг государственных учреждений</p>
-            </div>
-            <div class="service">
-                <img src="./images/service-11.jpg" alt="service-11" class="service__image">
-                <p class="service__description"> Проекты озеленения микрорайонов</p>
+            <div class="section-services__gallery--second">
+                <div class="service">
+                    <img src="./images/service-7.png" alt="service-7" class="service__image">
+                    <p class="service__description"> Дендрологическая инвентаризация, определение видов кустарников и деревьев</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-8.webp" alt="service-8" class="service__image">
+                    <p class="service__description">  Проекты образовательных садов для школ</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-9.png" alt="service-9" class="service__image">
+                    <p class="service__description"> Проекты сенсорных садов для инвалидов</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-10.png" alt="service-10" class="service__image">
+                    <p class="service__description">Репрезентативные проекты озеленения вокруг государственных учреждений</p>
+                </div>
+                <div class="service">
+                    <img src="./images/service-11.jpg" alt="service-11" class="service__image">
+                    <p class="service__description"> Проекты озеленения микрорайонов</p>
+                </div>
             </div>
         </div>
         <div class="additions-container">
@@ -103,7 +130,7 @@
         </div>
         <div class="adventages">
             <h3 class="section-services__subheader">Реализация</h3>
-            <p class="section-services__description">Вас интересует дизайн и реализация сада? Фирма Artist Garden также предлагает такую возможность. Реализация сада — это представление ранее спроектированной территории, над которой мы работали. Мы берем на себя все обязанности, связанные со строительством, начиная от закупки всех строительных материалов, растений, малой архитектуры и заканчивая сдачей готового сада, которым можно сразу пользоваться.</p>
+            <p class="section-services__description">Вас интересует дизайн и реализация сада? Фирма <span class="text-not-bold">Artist Garden&nbsp;</span> также предлагает такую возможность. Реализация сада — это представление ранее спроектированной территории, над которой мы работали. Мы берем на себя все обязанности, связанные со строительством, начиная от закупки всех строительных материалов, растений, малой архитектуры и заканчивая сдачей готового сада, которым можно сразу пользоваться.</p>
         </div>
         <div class="care">
             <h3 class="section-services__subheader care-subtitle">Уход</h3>
@@ -146,7 +173,7 @@
     </section>
     <section class="section-about" id="about">
         <h2 class="section-about__header">О компании</h2>
-        <p class="section-about__description">Artist Garden — это фирма занимающаяся ландшафтной архитектурой. Предложение также включает в себя реализацию и обслуживание спроектированных садов, надзор за исполнительными работами домашних садов и удалённое проектирование. Нашей целью является выполнение уникальных и престижных проектов, отвечающих ожиданиям даже самых требовательных клиентов. Компания предоставляет комплексный сервис на каждом этапе сотрудничества, ориентируясь на честность, надёжность, оригинальность, натуральные материалы и неожиданные детали.</p>
+        <p class="section-about__description"><span class="text-not-bold">Artist Garden —&nbsp;</span>это фирма занимающаяся ландшафтной архитектурой. Предложение также включает в себя реализацию и обслуживание спроектированных садов, надзор за исполнительными работами домашних садов и удалённое проектирование. Нашей целью является выполнение уникальных и престижных проектов, отвечающих ожиданиям даже самых требовательных клиентов. Компания предоставляет комплексный сервис на каждом этапе сотрудничества, ориентируясь на честность, надёжность, оригинальность, натуральные материалы и неожиданные детали.</p>
         <div class="comments-container">
             <div class="comments-container__comment--left">
                 <div class="person-about">
@@ -155,7 +182,7 @@
                     <p class="person-about__description">Магистр Инженер в области Ландшафтной Архитектуры с Европейским образованием и опытом работы.
                        <br> Специалист по озеленению и уходу за садами.</p>
                 </div>
-                <p class="comment-description">«Моё увлечение архитектурой началось с раннего возраста, благодаря чему все мои проекты, связанные с оформлением зелени, возникают из большого восхищения природой. С детства я участвовала в большом количестве конкурсов, заканчивала много школ подготовительных, с годами все перешло в тренинги и практики, закончила учёбу в Польском Государственном природном университете ”Uniwersytet Przyrodzniczy we Wrocławiu”. Сегодня я могу поделиться с вами своими знаниями и опытом».</p>
+                <p class="comment-description">«Моё увлечение архитектурой началось с раннего возраста, благодаря чему все мои проекты, связанные с оформлением зелени, возникают из большого восхищения природой. С детства я участвовала в большом количестве конкурсов, заканчивала много школ подготовительных, с годами все перешло в тренинги и практики, закончила учёбу в Польском Государственном природном университете <span class="text-not-bold">”Uniwersytet Przyrodzniczy we Wrocławiu”. </span>Сегодня я могу поделиться с вами своими знаниями и опытом».</p>
             </div>
             <div class="comments-container__comment--right">
                 <div class="person-about">
@@ -227,5 +254,7 @@
             </div>
         </div>
     </footer>
+    
+    <script src="index.js"></script>
 </body>
 </html>
